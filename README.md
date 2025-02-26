@@ -1,17 +1,17 @@
-# Cover Letter Builder Pro
+# Clone the repository
+git clone https://github.com/utl-shadab/cover-letter-builder
+cd cover-letter-builder-pro
 
-<img src="/app/twitter-image.png" alt="dashnoard">
+# Install dependencies
+npm install
 
-Cover Letter Builder Pro is a web application that allows you to create a cover letter based on a job posting. It uses
-Groq library with Llama to generate the cover letter content.
+# Set up environment variables
+cp .env.example .env
 
-Heavily tested with various job
-application, still in beta.
+# Update .env file with your database and API keys
 
-## Contributing
+# Push Prisma schema to the database
+npx prisma migrate dev --name init
 
-Contributions are welcome! If you find a bug or have a suggestion, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
+# Run the development server
+npm run dev
